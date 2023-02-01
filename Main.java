@@ -1,8 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        suma(10, 20, 50);
+        coche miCoche = new coche();
+        miCoche.AumentarPuerta();
+        System.out.println(miCoche.puertas);
+
     }
-    public static void suma(int a, int b, int c) {
-        System.out.println(a + b + c);
+static class coche {
+     public int puertas= 4;
+
+     public void AumentarPuerta() {
+             this.puertas++;
     }
 }
+}
+
+
